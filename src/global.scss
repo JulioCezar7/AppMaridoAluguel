@@ -1,37 +1,78 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
 
-/* Core CSS required for Ionic components to work properly */
-@import "@ionic/angular/css/core.css";
 
-/* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
 
-/* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+/* Add application styles & imports to this file! */
+@import "~@ionic/angular/css/ionic.bundle.css";
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
+.titulo{
+    text-align: center;
+}
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+:root{
+    --ion-font-family: "Oswald", sans-serif;
+    /* barra superior */
+  --ion-toolbar-background: #29065a;
+  --ion-toolbar-color: #ffffff;
+
+  --ion-background-color: linear-gradient(180deg, #29065a 0%, #7314fd 100%);
+
+  /* barra inferior */
+  --ion-tab-bar-background: #29065a;
+  --ion-tab-bar-color: #44578a;
+  --ion-tab-bar-color-selected: #ffffff;
+  
+  --ion-text-color: white;
+  --ion-text-color-rgb: 255, 255, 255;
+
+  --ion-card-background: linear-gradient(139deg,#831affab 0%,transparent 100%);
+  --ion-item-background: transparent;
+
+}
+
+.conteudo{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.img-item{
+    
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    max-width: 300px;
+
+    animation: animation-img-item 4s infinite alternate  ;
+}
+
+ion-thumbnail{
+    animation: animation-item 4s infinite alternate  ;
+}
+
+ion-card{
+    border-radius: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+ion-card:hover{
+    transform: scale(1.03);
+}
+
+@keyframes animation-item {
+    0%{
+        transform: translate(0px, 5px) rotate(0deg);
+    }
+    100%{ 
+        transform: translate(0px, -5px) rotate(4deg);
+    }
+}    
+
+@keyframes animation-img-item {
+    0%{
+        transform: translate(0px, 5px);
+    }
+    100%{ 
+        transform: translate(0px, -5px);
+    }
+} 

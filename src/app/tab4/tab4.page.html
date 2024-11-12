@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title class="titulo">
-      Serviços
+      Serviços Aberto
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -18,10 +18,11 @@
         <ion-label>Clinico Geral:
           Dr. Alison Peres
           CRM: 00002
-          R$: 120,00 
-          <ion-button class="recusar">Solicitar</ion-button> 
-        </ion-label>
+          R$: 120,00  
+        </ion-label> 
       </ion-item>
+      <ion-button class="aceitar" color="success" (click)="acessar()">ACEITAR</ion-button>
+      <ion-button class="recusar" color="danger">RECUSAR</ion-button> 
     </ion-card>
 
     <ion-card>
@@ -35,9 +36,10 @@
           Edson Guimaraes
           CFF:0003
           R$: 60,00
-          <ion-button class="recusar">Solicitar</ion-button>
         </ion-label>
       </ion-item>
+      <ion-button class="aceitar" color="success" (click)="acessar()">ACEITAR</ion-button>
+      <ion-button class="recusar" color="danger">RECUSAR</ion-button>
     </ion-card>
 
     <ion-card>
@@ -51,9 +53,10 @@
           Denise Royal
           COFFITO: 000202
           R$: 150,00
-          <ion-button class="recusar">Solicitar</ion-button>
         </ion-label>
       </ion-item>
+      <ion-button class="aceitar" color="success" (click)="acessar()">ACEITAR</ion-button>
+      <ion-button class="recusar" color="danger">RECUSAR</ion-button>
     </ion-card>
 
     <ion-card>
@@ -67,9 +70,10 @@
           Juliana Santos    
           COFEN: 000042
           R$: 100,00
-          <ion-button class="recusar">Solicitar</ion-button>
         </ion-label>
       </ion-item>
+      <ion-button class="aceitar" color="success" (click)="acessar()">ACEITAR</ion-button>
+      <ion-button class="recusar" color="danger">RECUSAR</ion-button>
     </ion-card>
 
     <ion-card>
@@ -82,10 +86,10 @@
         <ion-label>Cuidadora de idoso:
           Bruna Fernandes
           R$: 150,00
-          CPF: 00489
-          <ion-button class="recusar">Solicitar</ion-button>
         </ion-label>
       </ion-item>
+      <ion-button class="aceitar" color="success" (click)="acessar()">ACEITAR</ion-button>
+      <ion-button class="recusar" color="danger">RECUSAR</ion-button>
     </ion-card>
 
     <ion-card>
@@ -99,9 +103,11 @@
           Dr. Thalis Ferreira
           CRM: 0000552
           R$: 120,00
-          <ion-button class="recusar">Solicitar</ion-button>
         </ion-label>
       </ion-item>
+      <ion-button class="aceitar" color="success" (click)="acessar()">ACEITAR</ion-button>
+      <ion-button class="recusar" color="danger">RECUSAR</ion-button>
     </ion-card>
   </div>
+  
 </ion-content>
